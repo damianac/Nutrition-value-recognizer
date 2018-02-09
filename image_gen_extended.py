@@ -383,7 +383,7 @@ def random_transform(x,
     shear_matrix = np.array([[1, -np.sin(shear), 0],
                              [0, np.cos(shear), 0],
                              [0, 0, 1]])
-    #comm
+
     if np.isscalar(zoom_range):
         zoom_range = [1 - zoom_range, 1 + zoom_range]
     elif len(zoom_range) == 2:
@@ -402,8 +402,6 @@ def random_transform(x,
                             [0, 0, 1]])
 
     transform_matrix = np.dot(np.dot(np.dot(rotation_matrix, translation_matrix), shear_matrix), zoom_matrix)
-    print(x.shape)
-    print(img_row_index)
     h, w = x.shape[img_row_index], x.shape[img_col_index]
     transform_matrix = transform_matrix_offset_center(transform_matrix, h, w)
     x = apply_transform(x, transform_matrix, img_channel_index,
