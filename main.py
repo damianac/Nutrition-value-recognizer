@@ -152,7 +152,7 @@ if __name__ == '__main__':
 	train_classes_cat = to_categorical(train_classes, 101)
 	test_classes_cat = to_categorical(test_classes, 101)
 
-
+	#test commented
 	train_datagen = T.ImageDataGenerator(
 	    featurewise_center=False,  # set input mean to 0 over the dataset
 	    samplewise_center=False,  # set each sample mean to 0

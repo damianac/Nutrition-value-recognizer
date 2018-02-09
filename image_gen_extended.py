@@ -383,7 +383,7 @@ def random_transform(x,
     shear_matrix = np.array([[1, -np.sin(shear), 0],
                              [0, np.cos(shear), 0],
                              [0, 0, 1]])
-
+    #comm
     if np.isscalar(zoom_range):
         zoom_range = [1 - zoom_range, 1 + zoom_range]
     elif len(zoom_range) == 2:
