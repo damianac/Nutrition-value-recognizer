@@ -1,6 +1,5 @@
 import os
 import json
-import cv2
 from keras.utils.np_utils import to_categorical
 from colorama import Fore, Back, Style
 from colorama import init
@@ -115,7 +114,7 @@ if __name__ == '__main__':
 		print("2. Create model")
 		print("3. Train model")
 		print("4. Load trained model")
-		print("5. Load food & predict class")
+		print("5. Load food & predict class and calories")
 		try:
 			selected = int(input("Enter number from menu: "))
 			if(selected == 1):
@@ -169,38 +168,3 @@ if __name__ == '__main__':
 			print("\nThat's not even a number.. Try again")	
 
 
-
-	# # K.clear_session()
-	# X_test, Y_test = load_images(TEST_IMAGES_LOCATION)
-	# X_train, Y_train = load_images(TRAIN_IMAGES_LOCATION)
-
-	# n_classes = len(np.unique(Y_train))
-	# Y_train_cat = to_categorical(Y_train, n_classes)
-	# Y_test_cat = to_categorical(Y_test, n_classes)
-
-	# datagen = ImageDataGenerator(
- #    featurewise_center=False,  # set input mean to 0 over the dataset
- #    samplewise_center=False,  # set each sample mean to 0
- #    featurewise_std_normalization=False,  # divide inputs by std of the dataset
- #    samplewise_std_normalization=False,  # divide each input by its std
- #    zca_whitening=False,  # apply ZCA whitening
- #    rotation_range=45,  # randomly rotate images in the range (degrees, 0 to 180)
- #    width_shift_range=0.125,  # randomly shift images horizontally (fraction of total width)
- #    height_shift_range=0.125,  # randomly shift images vertically (fraction of total height)
- #    horizontal_flip=True,  # randomly flip images
- #    vertical_flip=False, # randomly flip images
- #    rescale=1./255,
- #    fill_mode='nearest')
-
-
-	# # datagen.fit(X_train)
-	# generator = datagen.flow(X_train, Y_train_cat, batch_size=BATCH_SIZE)
-	# val_generator = datagen.flow(X_test, Y_test_cat, batch_size=BATCH_SIZE)
-	 
-	# # test_gen = datagen.flow(test_data, test_classes_cat, batch_size=BATCH_SIZE)
-	# K.clear_session()
-	# callbacks = []
-	# callbacks.append(ModelCheckpoint(filepath='model4.{epoch:02d}-{val_loss:.2f}.hdf5', verbose=1, save_best_only=True))
-
-	# model = create_model(101, DROPOUT, shape)
-	# train_model(model, train_generator, test_generator, callbacks, train_data.shape[0] - 1, test_data.shape[0] - 1)
