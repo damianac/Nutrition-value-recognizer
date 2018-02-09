@@ -20,7 +20,6 @@ from keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from keras.regularizers import l2
 import keras.backend as K
-import multiprocessing as mp
 import pathlib
 
 load_dotenv(find_dotenv())
