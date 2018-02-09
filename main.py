@@ -11,7 +11,6 @@ from keras.preprocessing import image
 from keras.layers import Dense, Flatten
 from keras.layers import Input
 from keras.applications.inception_v3 import InceptionV3
-from scipy.misc import imresize
 import collections
 from shutil import copyfile
 from keras.optimizers import SGD
@@ -21,7 +20,6 @@ from keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from keras.regularizers import l2
 import keras.backend as K
-import image_gen_extended as T
 import multiprocessing as mp
 import pathlib
 
