@@ -19,6 +19,20 @@ In order to successfuly run the project you'd need:
 - scipy
 - dotenv
 
+## Setting up the environment
+Dotenv is used for static variables. To set up the project, rename .env.example to .env, and modify the data in it according to your needs.
+```
+epochs={NUMBER OF EPOCHS}
+batch_size={NUMBER OF BATCH SIZE}
+dropout={DROPOUT NUMBER}
+train_images={RELATIVE/ABSOLUTE PATH TO TRAIN JSON FILE}
+test_images={RELATIVE/ABSOLUTE PATH TO TEST JSON FILE}
+supported_food={LIST OF SUPPORTED FOODS}
+trained_model_url={TRAINED MODEL SAVE LOCATION}
+image_url={PATH TO THE IMAGE FOR RECOGNITION}
+nutrition_value_json_path={PATH TO JSON WITH NUTRITION VALUE}
+```
+
 ## Dataset
 As most of food-recognition projects, we are also using [Food-101 Dataset](https://www.vision.ee.ethz.ch/datasets_extra/food-101/).
 It contains 101 diffrent classes, which is fairsome amount for training. There are 1000 images of each food (around 750 for training, and 250 for testing)
