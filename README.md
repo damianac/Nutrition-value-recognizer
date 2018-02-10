@@ -1,4 +1,4 @@
-# Nutrition-value-recognizer
+# Nutrition-value-recognizer (Poster)
 A machine-learning program for food recognition
 
 ## Motivation
@@ -54,12 +54,24 @@ def exportImages(json_url):
 ```
 
 As for image processing, we are using build-in Keras generator [ImageDataGenerator](https://keras.io/preprocessing/image/)
+This generator generate batches of tensor image data with real-time data augmentation. Basically, it creates loads of images and holds it in RAM memory. You can, however,
+save it in a file, but we didn't do that in our project as it would be space consuming.
 
 ## Creating model
+Using GlobalAveragePooling is one of the things that boosted our accuracy, unlike MaxPooling that gave bad results.
 So far, the best result we got is with [ResNet50](https://keras.io/applications/#resnet50), and that's what we used in code
 
+![GlobalPooling](https://alexisbcook.github.io/assets/global_average_pooling.png "GlobalPooling")
+
 ## Training model
-The CNN we used is GlobalAveragePooling by Keras
+We used ResidualNetwork for training purposes
 
 ## Achieved accuracy
-We have tested training model with 4 different food classes and the result we got is ~60% accuracy with only one epoche.
+We have tested training model with 4 different food classes and the result we got is 60%-65% accuracy with only one epoche.
+![accuracy](https://i.imgur.com/wB5dJPa.png "accuracy")
+
+## Server used
+We've tested training on top-level i5 processor and to finish one epoche, we'd have to train for 1,400 hours. Nonetheless, we've searched for alternatives, and managed to rent
+server with better CPU on ovh.com. It was 4x faster then i5, and it would take around ~350 hours to do one epoche.
+
+
