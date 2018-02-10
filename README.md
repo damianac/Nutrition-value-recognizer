@@ -74,4 +74,18 @@ We have tested training model with 4 different food classes and the result we go
 We've tested training on top-level i5 processor and to finish one epoche, we'd have to train for 1,400 hours. Nonetheless, we've searched for alternatives, and managed to rent
 server with better CPU on ovh.com. It was 4x faster then i5, and it would take around ~350 hours to do one epoche.
 
+Server specifications are:
+```
+Intel  Xeon E3-1270v6
+4c/8t - 3.8GHz /4.2GHz
+32GB DDR4 ECC 2400 MHz
+SoftRaid  2x2TB 
+500 Mbps  bandwidth
+vRack: 10 Mbps
+```
+
+## Optimizing the speed
+Even with cloud CPU we rented, the end-results weren't satisfying. We've noticed that not all of the CPU on cloud was used for training. One of the ideas we had,
+was to optimize image data generator. The problem within was that Keras documentation for ImageDataGenerator was one pager, it's pretty shallow with loads of that missing, so we decided to modify it by creating new processes. This however, was not used in project but code's on the repository in image_gen_extended.py file. The idea was to create multiple processes that would basically to the training, which is going to use more of processor's resources for training. 
+
 
