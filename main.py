@@ -1,8 +1,6 @@
 import os
 import json
 from keras.utils.np_utils import to_categorical
-from colorama import Fore, Back, Style
-from colorama import init
 from dotenv import load_dotenv, find_dotenv
 from keras.callbacks import ModelCheckpoint
 from keras.models import Model, load_model
@@ -23,7 +21,7 @@ import keras.backend as K
 import pathlib
 
 load_dotenv(find_dotenv())
-init()
+
 
 
 ##################################### STATIC DATA FROM ENVIRONMENT FILE ###############################################
@@ -151,7 +149,7 @@ if __name__ == '__main__':
 		print("2. Create model")
 		print("3. Train model")
 		print("4. Load trained model")
-		print("5. Load food & predict class and calories")
+		print("5. Load food & predict class and nutrition value")
 		try:
 			selected = int(input("Enter number from menu: "))
 			if(selected == 1):

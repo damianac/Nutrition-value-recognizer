@@ -1,1 +1,709 @@
-{"":{}}
+{
+  "apple_pie": {
+    "serving_size": "1 slice",
+    "calories": "170",
+    "fat": "7g",
+    "carbs": "45g",
+    "protein": "0g"
+  },
+  "baby_back_ribs": {
+    "serving_size": "5",
+    "calories": "475",
+    "fat": "34g",
+    "carbs": "17g",
+    "protein": "52g"
+  },
+  "baklava": {
+    "serving_size": "1 slice",
+    "calories": "267",
+    "fat": "16.8g",
+    "carbs": "28.4g",
+    "protein": "2.4g"
+  },
+  "beef_carpaccio": {
+    "serving_size": "100g",
+    "calories": "230",
+    "fat": "10.8g",
+    "carbs": "4.5g",
+    "protein": "21g"
+  },
+  "beef_tartare": {
+    "serving_size": "100g",
+    "calories": "127",
+    "fat": "4.4g",
+    "carbs": "0.4g",
+    "protein": "18.5g"
+  },
+  "beet_salad": {
+    "serving_size": "1 fluid ounce",
+    "calories": "9.6",
+    "fat": "0.6g",
+    "carbs": "2.4g",
+    "protein": "0.3g"
+  },
+  "beignets": {
+    "serving_size": "1 unit",
+    "calories": "260",
+    "fat": "10g",
+    "carbs": "42.8g",
+    "protein": "6.2g"
+  },
+  "bibimap": {
+    "serving_size": "1 bowl",
+    "calories": "1460",
+    "fat": "93g",
+    "carbs": "110g",
+    "protein": "44g"
+  },
+  "bread_pudding": {
+    "serving_size": "1 serving",
+    "calories": "392.8",
+    "fat": "19.8g",
+    "carbs": "45.4g",
+    "protein": "5.5g"
+  },
+  "breakfast_burrito": {
+    "serving_size": "1 unit",
+    "calories": "579",
+    "fat": "23.4g",
+    "carbs": "64.7g",
+    "protein": "27.5g"
+  },
+  "burschetta": {
+    "serving_size": "1 piece",
+    "calories": "40",
+    "fat": "9.6g",
+    "carbs": "4.8g",
+    "protein": "1g"
+  },
+  "caesar_salad": {
+    "serving_size": "1 bowl",
+    "calories": "150",
+    "fat": "8g",
+    "carbs": "16g",
+    "protein": "3g"
+  },
+  "cannoli": {
+    "serving_size": "1 filled shell",
+    "calories": "374",
+    "fat": "17g",
+    "carbs": "44g",
+    "protein": "10g"
+  },
+  "caprese_salad": {
+    "serving_size": "1 each",
+    "calories": "150.9",
+    "fat": "9.6g",
+    "carbs": "3.8g",
+    "protein": "10g"
+  },
+  "carrot_cake": {
+    "serving_size": "1 slice",
+    "calories": "280",
+    "fat": "13g",
+    "carbs": "37g",
+    "protein": "3g"
+  },
+  "ceviche": {
+    "serving_size": "1 cup",
+    "calories": "300",
+    "fat": "10g",
+    "carbs": "41g",
+    "protein": "12g"
+  },
+  "cheesecake": {
+    "serving_size": "1 slice",
+    "calories": "323",
+    "fat": "13g",
+    "carbs": "44.9g",
+    "protein": "7.8g"
+  },
+  "cheese_plate": {
+    "serving_size": "1 each",
+    "calories": "472",
+    "fat": "33g",
+    "carbs": "19.2g",
+    "protein": "25.4g"
+  },
+  "chicken_curry": {
+    "serving_size": "1 cup",
+    "calories": "247",
+    "fat": "11g",
+    "carbs": "14g",
+    "protein": "23g"
+  },
+  "chicken_quesadilla": {
+    "serving_size": "1 serving",
+    "calories": "796.1",
+    "fat": "42.1g",
+    "carbs": "56.6g",
+    "protein": "46.1g"
+  },
+  "chicken_wings": {
+    "serving_size": "12 whole wingsb",
+    "calories": "89",
+    "fat": "8g",
+    "carbs": "0g",
+    "protein": "18.5g"
+  },
+  "chocolate_cake": {
+    "serving_size": "1 slice",
+    "calories": "210",
+    "fat": "9g",
+    "carbs": "29g",
+    "protein": "5g"
+  },
+  "chocolate_mousse": {
+    "serving_size": "1 each",
+    "calories": "218.2",
+    "fat": "14.8g",
+    "carbs": "19.2g",
+    "protein": "3.7g"
+  },
+  "churros": {
+    "serving_size": "1 piece",
+    "calories": "50",
+    "fat": "3g",
+    "carbs": "5.3g",
+    "protein": "0.5g"
+  },
+  "clam_chowder": {
+    "serving_size": "6 ounce",
+    "calories": "159.8",
+    "fat": "9.2g",
+    "carbs": "13.7g",
+    "protein": "4.5g"
+  },
+  "clam_sandwich": {
+    "serving_size": "1 piece",
+    "calories": "127",
+    "fat": "6.2g",
+    "carbs": "12.4g",
+    "protein": "2.9g"
+  },
+  "crab_cakes": {
+    "serving_size": "1 piece",
+    "calories": "159.6",
+    "fat": "10.4g",
+    "carbs": "5.1g",
+    "protein": "11.3g"
+  },
+  "creme_brulee": {
+    "serving_size": "100g",
+    "calories": "144",
+    "fat": "10.5g",
+    "carbs": "5.2g",
+    "protein": "7g"
+  },
+  "croque_madame": {
+    "serving_size": "1 order",
+    "calories": "1150",
+    "fat": "62g",
+    "carbs": "89g",
+    "protein": "15g"
+  },
+  "cup_cakes": {
+    "serving_size": "1 unit",
+    "calories": "280",
+    "fat": "15g",
+    "carbs": "37g",
+    "protein": "3g"
+  },
+  "deviled_eggs": {
+    "serving_size": "1 filed half egg",
+    "calories": "91",
+    "fat": "7.9g",
+    "carbs": "0.4g",
+    "protein": "3.9g"
+  },
+  "donuts": {
+    "serving_size": "1 each",
+    "calories": "297",
+    "fat": "15g",
+    "carbs": "37.5g",
+    "protein": "3g"
+  },
+  "dumplings": {
+    "serving_size": "1 bowl",
+    "calories": "260",
+    "fat": "6g",
+    "carbs": "29g",
+    "protein": "14g"
+  },
+  "edamame": {
+    "serving_size": "1 serving",
+    "calories": "114.4",
+    "fat": "4.8g",
+    "carbs": "9.3g",
+    "protein": "10.2g"
+  },
+  "eggs_benedict": {
+    "serving_size": "1 unit",
+    "calories": "316.8",
+    "fat": "15.5g",
+    "carbs": "26.1g",
+    "protein": "18.8g"
+  },
+  "escargots": {
+    "serving_size": "4 pieces",
+    "calories": "170",
+    "fat": "16g",
+    "carbs": "3g",
+    "protein": "5g"
+  },
+  "falafel": {
+    "serving_size": "100g",
+    "calories": "327",
+    "fat": "10g",
+    "carbs": "65g",
+    "protein": "15g"
+  },
+  "fillet_mignon": {
+    "serving_size": "1 oz",
+    "calories": "54",
+    "fat": "2g",
+    "carbs": "0g",
+    "protein": "6g"
+  },
+  "fish_and_chips": {
+    "serving_size": "1 platter",
+    "calories": "850",
+    "fat": "51g",
+    "carbs": "70g",
+    "protein": "27g"
+  },
+  "fole_gras": {
+    "serving_size": "50g",
+    "calories": "240",
+    "fat": "24g",
+    "carbs": "2g",
+    "protein": "10g"
+  },
+  "french_fries": {
+    "serving_size": "0.5 cup",
+    "calories": "197.2",
+    "fat": "11.1g",
+    "carbs": "22.5g",
+    "protein": "2g"
+  },
+  "french_onion_soup": {
+    "serving_size": "1 cup",
+    "calories": "100",
+    "fat": "4g",
+    "carbs": "10g",
+    "protein": "3g"
+  },
+  "french_toast": {
+    "serving_size": "1 slice",
+    "calories": "171.3",
+    "fat": "3.5g",
+    "carbs": "27g",
+    "protein": "7.5g"
+  },
+  "fried_calamari": {
+    "serving_size": "1 dish",
+    "calories": "780",
+    "fat": "4.6g",
+    "carbs": "52g",
+    "protein": "13.3g"
+  },
+  "fried_rice": {
+    "serving_size": "1 cup",
+    "calories": "257.4",
+    "fat": "10.9g",
+    "carbs": "33.5g",
+    "protein": "5.6g"
+  },
+  "frozen_yogurt": {
+    "serving_size": "1 oz",
+    "calories": "30",
+    "fat": "4g",
+    "carbs": "6g",
+    "protein": "2.9g"
+  },
+  "garlic_bread": {
+    "serving_size": "1 slice",
+    "calories": "136",
+    "fat": "8.5g",
+    "carbs": "13.2g",
+    "protein": "2.3g"
+  },
+  "gnocchi": {
+    "serving_size": "15 pieces",
+    "calories": "190",
+    "fat": "0g",
+    "carbs": "41g",
+    "protein": "5.8g"
+  },
+  "greek_salad": {
+    "serving_size": "1 cup",
+    "calories": "150",
+    "fat": "10g",
+    "carbs": "11g",
+    "protein": "7g"
+  },
+  "grilled_chesse_sandwich": {
+    "serving_size": "1 unit",
+    "calories": "250",
+    "fat": "14.5g",
+    "carbs": "23g",
+    "protein": "10g"
+  },
+  "grilled_salmon": {
+    "serving_size": "4 oz",
+    "calories": "200",
+    "fat": "7g",
+    "carbs": "0.4g",
+    "protein": "22g"
+  },
+  "guacamole": {
+    "serving_size": "1 Tbsp",
+    "calories": "21",
+    "fat": "2g",
+    "carbs": "1.2g",
+    "protein": "0.3g"
+  },
+  "gyoza": {
+    "serving_size": "1 bun",
+    "calories": "210",
+    "fat": "2g",
+    "carbs": "41g",
+    "protein": "5g"
+  },
+  "hamburger": {
+    "serving_size": "1 unit",
+    "calories": "336",
+    "fat": "13.5g",
+    "carbs": "25.3g",
+    "protein": "27.9g"
+  },
+  "hot_and_sour_soup": {
+    "serving_size": "2 cup",
+    "calories": "350",
+    "fat": "7g",
+    "carbs": "59g",
+    "protein": "15g"
+  },
+  "hot_dog": {
+    "serving_size": "1 each",
+    "calories": "422.6",
+    "fat": "23.4g",
+    "carbs": "38g",
+    "protein": "15g"
+  },
+  "huevos_rancheros": {
+    "serving_size": "4 oz Eggs",
+    "calories": "287",
+    "fat": "18.5g",
+    "carbs": "15.3g",
+    "protein": "15g"
+  },
+  "humus": {
+    "serving_size": "100g",
+    "calories": "193",
+    "fat": "11.9g",
+    "carbs": "10.8g",
+    "protein": "8.3g"
+  },
+  "ice_cream": {
+    "serving_size": "0.5 cup",
+    "calories": "144.7",
+    "fat": "7.9g",
+    "carbs": "17g",
+    "protein": "2.5g"
+  },
+  "lasagna": {
+    "serving_size": "1 piece",
+    "calories": "698",
+    "fat": "43g",
+    "carbs": "28g",
+    "protein": "45g"
+  },
+  "lobster_bisque": {
+    "serving_size": "1 cup(243g)",
+    "calories": "280",
+    "fat": "19g",
+    "carbs": "12g",
+    "protein": "9g"
+  },
+  "lobster_roll_sandwich": {
+    "serving_size": "1 unit",
+    "calories": "328",
+    "fat": "14.2g",
+    "carbs": "24g",
+    "protein": "26.9g"
+  },
+  "macaroni_and_cheese": {
+    "serving_size": "1 cup",
+    "calories": "360",
+    "fat": "12g",
+    "carbs": "59g",
+    "protein": "13g"
+  },
+  "macarons": {
+    "serving_size": "2 piece",
+    "calories": "176",
+    "fat": "8.9g",
+    "carbs": "15.5g",
+    "protein": "4g"
+  },
+  "miso_soup": {
+    "serving_size": "6 oz",
+    "calories": "69",
+    "fat": "4.6g",
+    "carbs": "4.9g",
+    "protein": "2.5g"
+  },
+  "mussels": {
+    "serving_size": "1 cup",
+    "calories": "80",
+    "fat": "2.2g",
+    "carbs": "2.5g",
+    "protein": "16.8g"
+  },
+  "nachos": {
+    "serving_size": "100g",
+    "calories": "470",
+    "fat": "20g",
+    "carbs": "63g",
+    "protein": "6.5g"
+  },
+  "omelette": {
+    "serving_size": "160g",
+    "calories": "286.4",
+    "fat": "23g",
+    "carbs": "1.8g",
+    "protein": "18.8g"
+  },
+  "onion_rings": {
+    "serving_size": "4 oz",
+    "calories": "380",
+    "fat": "24g",
+    "carbs": "37g",
+    "protein": "4g"
+  },
+  "oysters": {
+    "serving_size": "24 cup",
+    "calories": "1920",
+    "fat": "48g",
+    "carbs": "86g",
+    "protein": "264g"
+  },
+  "pad_thai": {
+    "serving_size": "1 plate",
+    "calories": "770",
+    "fat": "17g",
+    "carbs": "44g",
+    "protein": "13.5"
+  },
+  "paella": {
+    "serving_size": "1 cup",
+    "calories": "157",
+    "fat": "1g",
+    "carbs": "29g",
+    "protein": "3g"
+  },
+  "pancakes": {
+    "serving_size": "1 oz",
+    "calories": "52.9",
+    "fat": "0.7g",
+    "carbs": "10.4g",
+    "protein": "1.5g"
+  },
+  "panna_cotta": {
+    "serving_size": "100g",
+    "calories": "219",
+    "fat": "17g",
+    "carbs": "13g",
+    "protein": "4g"
+  },
+  "peking_duck": {
+    "serving_size": "3 oz",
+    "calories": "250",
+    "fat": "21g",
+    "carbs": "0.4g",
+    "protein": "13g"
+  },
+  "pho": {
+    "serving_size": "20 oz",
+    "calories": "375",
+    "fat": "10.3g",
+    "carbs": "33.6g",
+    "protein": "33.1g"
+  },
+  "pizza": {
+    "serving_size": "1 slice",
+    "calories": "127",
+    "fat": "4.9g",
+    "carbs": "8g",
+    "protein": "2.7g"
+  },
+  "pork_chop": {
+    "serving_size": "1 plate",
+    "calories": "102",
+    "fat": "4.3g",
+    "carbs": "0.2g",
+    "protein": "13.5g"
+  },
+  "poutine": {
+    "serving_size": "1 cup",
+    "calories": "322",
+    "fat": "21g",
+    "carbs": "21.6g",
+    "protein": "12.1g"
+  },
+  "prime_rib": {
+    "serving_size": "3oz",
+    "calories": "190",
+    "fat": "9.8g",
+    "carbs": "0.2g",
+    "protein": "23.6g"
+  },
+  "pulled_pork_sandwich": {
+    "serving_size": "1 unit",
+    "calories": "292",
+    "fat": "7g",
+    "carbs": "30g",
+    "protein": "12g"
+  },
+  "ramen": {
+    "serving_size": "1 bowl",
+    "calories": "410",
+    "fat": "6.2g",
+    "carbs": "75g",
+    "protein": "11.6g"
+  },
+  "ravioli": {
+    "serving_size": "4 pieces",
+    "calories": "320",
+    "fat": "13g",
+    "carbs": "40g",
+    "protein": "15g"
+  },
+  "red_velvet_cake": {
+    "serving_size": "0.5 slice (101g)",
+    "calories": "270",
+    "fat": "12g",
+    "carbs": "49g",
+    "protein": "2g"
+  },
+  "risotto": {
+    "serving_size": "0.25 cup",
+    "calories": "160",
+    "fat": "10g",
+    "carbs": "36g",
+    "protein": "3g"
+  },
+  "samosa": {
+    "serving_size": "4 units",
+    "calories": "177",
+    "fat": "2g",
+    "carbs": "27g",
+    "protein": "15g"
+  },
+  "sashimi": {
+    "serving_size": "7 units",
+    "calories": "117",
+    "fat": "3g",
+    "carbs": "0.4g",
+    "protein": "20g"
+  },
+  "scallops": {
+    "serving_size": "100g",
+    "calories": "32",
+    "fat": "1g",
+    "carbs": "5g",
+    "protein": "21g"
+  },
+  "seaweed_salad": {
+    "serving_size": "3 oz",
+    "calories": "88",
+    "fat": "4.4g",
+    "carbs": "11g",
+    "protein": "2g"
+  },
+  "shrimp_and_grits": {
+    "serving_size": "1 serving",
+    "calories": "295.5",
+    "fat": "15.8g",
+    "carbs": "20.1g",
+    "protein": "16.5g"
+  },
+  "spaghetti_bolognese": {
+    "serving_size": "100g",
+    "calories": "310",
+    "fat": "5g",
+    "carbs": "55g",
+    "protein": "12g"
+  },
+  "spaghetti_carbonara": {
+    "serving_size": "100g",
+    "calories": "269",
+    "fat": "14.4g",
+    "carbs": "21g",
+    "protein": "10.6g"
+  },
+  "spring_rolls": {
+    "serving_size": "2 units",
+    "calories": "368",
+    "fat": "7.7g",
+    "carbs": "45.3g",
+    "protein": "30.2g"
+  },
+  "steak": {
+    "serving_size": "100g",
+    "calories": "271",
+    "fat": "19g",
+    "carbs": "0.4g",
+    "protein": "25g"
+  },
+  "strawberry_shortcake": {
+    "serving_size": "1 each",
+    "calories": "239",
+    "fat": "6.3g",
+    "carbs": "45.3g",
+    "protein": "2.6g"
+  },
+  "sushi": {
+    "serving_size": "1 unit",
+    "calories": "50",
+    "fat": "0.7g",
+    "carbs": "8.2g",
+    "protein": "3.8g"
+  },
+  "tacos": {
+    "serving_size": "1 unit",
+    "calories": "335",
+    "fat": "20.6g",
+    "carbs": "15.5g",
+    "protein": "15.5g"
+  },
+  "takoyaki": {
+    "serving_size": "5 piece",
+    "calories": "140",
+    "fat": "5g",
+    "carbs": "19g",
+    "protein": "5g"
+  },
+  "tiramisu": {
+    "serving_size": "1 cup",
+    "calories": "340",
+    "fat": "18g",
+    "carbs": "40g",
+    "protein": "4g"
+  },
+  "tuna_tartare": {
+    "serving_size": "63g",
+    "calories": "123",
+    "fat": "9.1g",
+    "carbs": "1.9g",
+    "protein": "8.3g"
+  },
+  "waffles": {
+    "serving_size": "1 bowl",
+    "calories": "530",
+    "fat": "31g",
+    "carbs": "43g",
+    "protein": "17g"
+  }
+}
