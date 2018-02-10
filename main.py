@@ -81,8 +81,12 @@ def load_image(img_path, dimensions, rescale=1. / 255):
 #######################################################################################################################
 def get_nutrition_value(food_name):
 	data = json.load(open(NUTRITION_VALUE_JSON))
-
-
+	print('Food: ' + food_name)
+	print('Serving size: ' + data[food_name]['serving_size'])
+	print('Calories: ' + data[food_name]['calories'])
+	print('Carbs: ' + data[food_name]['carbs'])
+	print('Fat: ' + data[food_name]['fat'])
+	print('Protein: ' + data[food_name]['protein'])
 
 ################################### create_model() FUNCTION ###########################################################
 # Creates ResNet50 Model
@@ -193,7 +197,8 @@ if __name__ == '__main__':
 			elif(selected == 5):
 				image = load_image(IMAGE_LOCATION, shape[:2])
 				preds = trained_model.predict(image)
-				print('\nThe image is: ' + num_classes[np.argmax(preds)])
+				get_nutrition_value(num_to_class[np.argmax(preds)])
+
 		
 			else:
 				print('\nYou need to enter valid number (from 1 to 5)')
