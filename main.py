@@ -25,6 +25,8 @@ import pathlib
 load_dotenv(find_dotenv())
 init()
 
+
+##################################### STATIC DATA FROM ENVIRONMENT FILE ###############################################
 EPOCHS = float(os.environ.get("epochs"))
 BATCH_SIZE = int(os.environ.get("batch_size"))
 TRAIN_IMAGES_JSON = os.environ.get("train_images")
@@ -34,7 +36,14 @@ SUPPORTED_FOOD = os.environ.get("supported_food")
 SHAPE = (224, 224, 3)
 MODEL_LOCATION = os.environ.get('trained_model_url')
 IMAGE_LOCATION = os.environ.get('image_url')
+NUTRITION_VALUE_JSON = os.environ.get('nutrition_value_json_path')
 
+
+################################### exportImages() FUNCTION ###########################################################
+# Takes the images from json file, and copies them to a separate file. This basically does train/test split in 2 files.
+# Arguments: json_url => Url to the json file, where we're getting path to images
+# Returns: void
+#######################################################################################################################
 def exportImages(json_url):
 	data = json.load(open(json_url))
 	prepend_url = 'ordered_images/test/'
@@ -53,6 +62,12 @@ def exportImages(json_url):
 			copyfile('images/' + food_url + '.jpg', prepend_url + food_url + '.jpg')
 
 
+
+################################### loadImage() FUNCTION ##############################################################
+# Loads and rescales the image to memory
+# Arguments: img_path => Path to the image(relative or absolute), dimensions => Scaling dimensions
+# Returns: Image that has been loaded
+#######################################################################################################################
 def load_image(img_path, dimensions, rescale=1. / 255):
     img = image.load_img(img_path, target_size=dimensions)
     x = image.img_to_array(img)
@@ -61,7 +76,21 @@ def load_image(img_path, dimensions, rescale=1. / 255):
 
     return x
 
+################################### get_nutrition_value() FUNCTION ####################################################
+# Gets nutrition value for the given food
+# Arguments: food_name => Name of the food that we're looking to get the values for
+# Returns: Array with the food values
+#######################################################################################################################
+def get_nutrition_value(food_name):
+	data = json.load(open(NUTRITION_VALUE_JSON))
 
+
+
+################################### create_model() FUNCTION ###########################################################
+# Creates ResNet50 Model
+# Arguments: num_classses => Number of classes, dropout => Dropout number, found in .env, => Images shape, found in env
+# Returns: Created model
+#######################################################################################################################
 def create_model(num_classes, dropout, shape):
 	base_model = ResNet50(
         weights='imagenet',
@@ -78,13 +107,24 @@ def create_model(num_classes, dropout, shape):
 
 	return model_final
 
-
+################################### load_model() FUNCTION ###########################################################
+# Loads ResNet50 Model
+# Arguments: weights_path => Path to the model location, shape => Images shape, found in .env
+# Returns: Created model
+#####################################################################################################################
 def load_model(weights_path, shape):
    model_final = create_model(4, 0, shape)
    model_final.load_weights(weights_path)
 
    return model_final
 
+
+################################### train_model() FUNCTION ##########################################################
+# Trains the created model
+# Arguments: model_final => created model, train_generator => generator from ImageDataGenerator
+#			 validation_generator => generator from ImageDataGenerator, callbacks => An array with configs
+# Returns: void
+#####################################################################################################################
 def train_model(model_final, train_generator, validation_generator, callbacks):
 	model_final.compile(
         loss='categorical_crossentropy',
@@ -97,7 +137,7 @@ def train_model(model_final, train_generator, validation_generator, callbacks):
                               validation_steps=validation_generator.samples)
 
 
-
+################################### main() FUNCTION ###########################################################
 if __name__ == '__main__': 
 
 	classes = SUPPORTED_FOOD.split(',')
